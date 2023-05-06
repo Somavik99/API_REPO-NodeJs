@@ -51,10 +51,10 @@ app.put('/Forms/:id', async (req, res)=>{
   }
 })
 
-app.post("/Form", async (req, res) => {
+app.post("/Forms", async (req, res) => {
   try {
-    const form = await Form.create(req.body);
-    res.status(200).json(form);
+    const forms = await Form.create(req.body);
+    res.status(200).json(forms);
   } catch (error) {
     console.log(error.message);
     res.status(500).json({ message: error.message });

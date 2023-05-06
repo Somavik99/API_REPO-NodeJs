@@ -23,8 +23,8 @@ const FormDataSchema = mongoose.Schema(
       type: String,
       required: [true, "Please enter a Form Data"],
     },
-    mobile: {
-      type: Number,
+    Mobile: {
+      type: String,
       required: true,
     },
     EmergencyMobile: {
